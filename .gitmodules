@@ -1,4 +1,0 @@
-[submodule "abunda"]
-	path = abunda
-	url = https://github.com/phattp/abunda.git
-	branch = master
