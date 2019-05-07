@@ -74,6 +74,15 @@ const ContentUL = styled.ul`
   margin-top: 10px;
 `;
 
+const H3 = styled.h3`
+  color: ${props => props.theme.colorWhite};
+`;
+
+const P = styled.p`
+  font-family: "Mitr";
+  letter-spacing: 0.8px;
+`;
+
 const Footer = () => {
   return (
     <Wrapper>
@@ -84,7 +93,7 @@ const Footer = () => {
               <img src={logo} alt="logo" />
               <div>abunda</div>
             </Logo>
-            <p>Copyright &copy; 2019 by Abunda Estate. All rights reserved.</p>
+            <P>Copyright &copy; 2019 by Abunda Estate. All rights reserved.</P>
             <SocialUL>
               <li>
                 <StyledLink href="/">
@@ -109,7 +118,7 @@ const Footer = () => {
             </SocialUL>
           </Col>
           <Col lg={2}>
-            <h3>อสังหาริมทรัพย์</h3>
+            <H3>อสังหาริมทรัพย์</H3>
             <ContentUL>
               <li>
                 <StyledLink href="/">ทรัพย์ทั้งหมด</StyledLink>
@@ -135,7 +144,7 @@ const Footer = () => {
             </ContentUL>
           </Col>
           <Col lg={2}>
-            <h3>บริษัท</h3>
+            <H3>บริษัท</H3>
             <ContentUL>
               <li>
                 <StyledLink href="/">เกี่ยวกับเรา</StyledLink>
@@ -152,7 +161,7 @@ const Footer = () => {
             </ContentUL>
           </Col>
           <Col lg={2}>
-            <h3>ช่วยเหลือ</h3>
+            <H3>ช่วยเหลือ</H3>
             <ContentUL>
               <li>
                 <StyledLink href="/">ติดต่อเรา</StyledLink>

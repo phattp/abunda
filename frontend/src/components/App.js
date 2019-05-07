@@ -16,12 +16,30 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Mitr';
     letter-spacing: .8px;
+    color: ${props => props.theme.colorBlack};
   }
 
   h3 {
     font-weight: 400;
     font-size: 1.2rem;
-    color: ${props => props.theme.colorWhite};
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+
+  h5 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  p {
+    font-family: Tahoma;
+    font-weight: 300;
+    font-size: .9rem;
+    letter-spacing: normal;
+    line-height: .5;
   }
 `;
 
