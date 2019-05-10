@@ -60,11 +60,19 @@ const StyledLink = styled(Link)`
 const FormCard = styled.div`
   border: 1px solid ${props => props.theme.colorGreyLight};
   border-radius: 5px;
-  padding: 10px;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 const P = styled.p`
-  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #ee2560;
+  margin-top: 20px;
+  border: 1px solid #ee2560;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 10px;
 `;
 
 class ListingList extends Component {
@@ -89,7 +97,11 @@ class ListingList extends Component {
   renderSearchForm() {
     return (
       <FormCard>
-        <h4>ประเภทอสังหาริมทรัพย์</h4>
+        <Form.Control as="select">
+          <option>ซื้อ</option>
+          <option>เช่า</option>
+        </Form.Control>
+        <h4 className="mt-2">ประเภทอสังหาริมทรัพย์</h4>
         <h5>ที่อยู่อาศัย</h5>
         <Form.Group controlId="formBasicChecbox">
           <Form.Check type="checkbox" label="คอนโด" />
@@ -130,15 +142,15 @@ class ListingList extends Component {
                 ? listing.name.substring(0, 50) + "..."
                 : listing.name}
             </StyledLink>
-            <P>
+            <p className="mt-2">
               {listing.address} {listing.city}
-            </P>
+            </p>
             <p>
               {listing.bedrooms} ห้องนอน &#8729; {listing.bathrooms} ห้องน้ำ
               &#8729; ฿{listing.psm} / ตารางเมตร
             </p>
             <h6>฿{listing.price}</h6>
-            <p>{listing.listing_type}</p>
+            <P>{listing.listing_type}</P>
           </CardDetail>
         </Card>
       );

@@ -14,7 +14,7 @@ import ListingDetail from "./listings/ListingDetail";
 // Define Global Style
 const GlobalStyle = createGlobalStyle`
   body {
-    font-family: 'Mitr';
+    font-family: 'Kanit';
     letter-spacing: .8px;
     color: ${props => props.theme.colorBlack};
   }
@@ -35,7 +35,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p {
-    font-family: Tahoma;
     font-weight: 300;
     font-size: .9rem;
     letter-spacing: normal;
