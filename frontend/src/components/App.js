@@ -6,6 +6,7 @@ import { Provider } from "react-redux";
 import store from "../store";
 
 import Header from "./layouts/Header";
+import Footer from "./layouts/Footer";
 import Landing from "./layouts/Landing";
 import NoMatch from "./layouts/NoMatch";
 import ListingList from "./listings/ListingList";
@@ -57,6 +58,7 @@ class App extends Component {
               <Route component={NoMatch} />
             </Switch>
           </Fragment>
+          <Footer />
         </Router>
       </Provider>
     );

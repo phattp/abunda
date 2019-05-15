@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Hero from "./Hero";
 import Recommended from "./Recommended";
 import PopLocation from "./PopLocation";
-import Footer from "./Footer";
 
 class Landing extends Component {
   componentDidMount() {
@@ -19,7 +18,6 @@ class Landing extends Component {
         <Hero />
         <Recommended />
         <PopLocation />
-        <Footer />
       </div>
     );
   }
