@@ -245,7 +245,6 @@ export class ListingDetail extends Component {
               </Row>
               <br />
               <h4>แผนที่</h4>
-              <br />
             </Col>
             {/* Agent Section */}
             <Col md={4}>
@@ -279,41 +278,6 @@ export class ListingDetail extends Component {
               </AgentDiv>
             </Col>
           </Row>
-          <h4>ติดต่อผู้ขาย</h4>
-          <AgentDiv>
-            <Row>
-              <Col>
-                <Form>
-                  <Form.Group controlId="formBasicText1">
-                    <Form.Control type="text" placeholder="ชื่อ" />
-                  </Form.Group>
-                  <Form.Group controlId="formBasicText2">
-                    <Form.Control type="text" placeholder="เบอร์โทรศัพท์" />
-                  </Form.Group>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Control type="text" placeholder="อีเมล์" />
-                  </Form.Group>
-                  <Button variant="primary" type="submit">
-                    สอบถามข้อมูล
-                  </Button>
-                </Form>
-              </Col>
-              <Col>
-                <Img src={agent} alt="agent" />
-                <h5 className="mt-3">นายร่ำรวย ขายดี</h5>
-                <p>นายหน้าอิสระ</p>
-                <div>
-                  <FaMobileAlt /> 082-999-9999
-                </div>
-                <img
-                  className="mt-2 mb-3"
-                  src={addLine}
-                  width="150px"
-                  alt="add line"
-                />
-              </Col>
-            </Row>
-          </AgentDiv>
           <br />
           <h4>ดูตัวเลือกอื่นๆ</h4>
           <br />
